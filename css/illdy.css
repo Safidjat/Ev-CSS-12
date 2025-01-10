@@ -1,0 +1,653 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    max-height: 200vh;
+    background: url('../img/bgHeader.jpg')center/cover;
+    padding: 0 15px;
+}
+
+#check {
+    display: none;
+}
+
+nav {
+    display: flex;
+    padding: 20px 0;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.txtWhite {
+    color: #fff;
+}
+
+.txtYellow {
+    color: #ffde00;
+}
+
+.txtDarkGrey {
+    color: #545454;
+}
+
+.txtLightGrey {
+    color: #8c9597;
+}
+
+.txtPink {
+    color: #f18b6d;
+}
+
+.txtPurple {
+    color: #6a4d8a;
+}
+
+.bgWhite {
+    background-color: #fff;
+}
+
+.bgYelllow {
+    background-color: #ffde00;
+}
+
+.bgPurple {
+    background-color: #6a4d8a;
+}
+
+.bgBluish {
+    background-color: #222f36;
+}
+.txtHoverYel{
+    &:hover{
+        color: #ffde00;
+    }
+}
+.txtHoverPurp{
+    &:hover{
+        color: #6a4d8a;
+    }
+}
+.bgHover {
+    &:hover {
+        background-color: #6a4d8a;
+    }
+}
+
+.fa-bars {
+    font-size: 1.4em;
+    font-weight: 1000;
+
+    &:active {
+        color: #ffde00;
+    }
+}
+
+#menu {
+    align-self: center;
+}
+
+#content {
+    display: none;
+}
+
+#check:checked~#content {
+    transition: 60s;
+    max-width: 100%;
+    display: block;
+}
+
+menu li a {
+    font-size: 1em;
+    font-family: "Lato";
+    font-weight: 400;
+    color: #000;
+    width: 100%;
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #8c9597;
+    text-decoration: none;   /*bootstrap linkini elave eliyende yaranib*/
+    &:hover {
+        background-color: #6a4d8a5b;
+    }
+}
+
+menu li a:active {
+    background-color: #6a4d8a;
+}
+
+#but {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mar {
+    padding: 50px 0;
+}
+
+#but a {
+    display: block;
+    width: 200px;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: "Lato";
+    margin: 10px 15px;
+    text-decoration: none;
+}
+
+.a1 {
+    background-color: #2021212a;
+    padding: 20px 0;
+    border: 2px solid #fff;
+
+    &:hover {
+        background-color: #7e81812a;
+    }
+}
+
+#title h1 {
+    line-height: 44px;
+    font-size: 2em;
+    margin-bottom: 29px;
+    font-family: "Poppins";
+    font-weight: 700;
+}
+
+#title {
+    text-align: center;
+}
+
+#title p {
+    line-height: 26px;
+    font-family: "Lato";
+    font-weight: 400;
+}
+
+.fa-circle {
+    font-size: 7px;
+}
+
+section.bgWhite h3 {
+    font-size: 2em;
+    font-weight: 700;
+    font-family: "Poppins";
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+section.bgWhite .pep {
+    padding: 0 15px;
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+section.bgWhite h3,
+section.bgWhite p {
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    width: 100%;
+
+}
+
+#variant {
+    padding: 40px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.num input {
+    /*reng??*/
+    display: block;
+    width: 100%;
+}
+
+.range {
+    padding: 20px 0;
+    width: 80%;
+}
+
+.num img {
+    height: 40px;
+}
+
+.txt span {
+    font-size: 16px;
+    font-family: "Lato";
+}
+
+.range i {
+    font-size: 14px;
+}
+
+.txt {
+    float: left;
+    /*text-align: left; niye islemedi?*/
+    padding-left: 8px;
+}
+
+.num {
+    position: relative;
+}
+
+.num img {
+    position: absolute;
+    top: -45px;
+    left: 55.3%;
+    /*niye responsiv olmadi?*/
+}
+
+#setka h2 {
+    font-size: 2em;
+    font-weight: 700;
+    font-family: "Poppins";
+    margin-bottom: 10px;
+}
+
+#setka h6 {
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#setka {
+    width: 100%;
+    height: 200px;
+    background-image: url(https://149842022.v2.pressablecdn.com/illdy/wp-content/themes/illdy/layout/images/front-page/pattern.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#pictures {
+    width: 100%;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#div1 {
+    background: url('../img/pic1.jpg')center/cover;
+
+    &:hover {
+        background: url('../img/pic1photopea.png')center/cover;
+    }
+}
+
+#div2 {
+    background: url('../img/pic2.jpg')center/cover;
+
+    &:hover {
+        background: url('../img/pic2photopea.png')center/cover;
+    }
+}
+
+#div3 {
+    background: url('../img/pic3.jpg')center/cover;
+
+    &:hover {
+        background: url('../img/pic3photopea.png')center/cover;
+    }
+}
+
+#div4 {
+    background: url('../img/pic4.jpg')center/cover;
+
+    &:hover {
+        background: url('../img/pic4photopea.png')center/cover;
+    }
+}
+
+.divler {
+    width: 50%;
+    min-height: 250px;
+    /*responsiv kvadrat ???*/
+}
+
+.pics:hover {
+    background-color: #ffffff89;
+    /*islemedi:(*/
+    display: block;
+    height: 100%;
+}
+
+#testimonials h2 {
+    font-size: 35px;
+    font-weight: 700;
+    font-family: "Poppins";
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 90px;
+}
+
+#testimonials {
+    width: 100%;
+    height: 95vh;
+    background: url(https://149842022.v2.pressablecdn.com/illdy/wp-content/themes/illdy/layout/images/testiomnials-background.jpg)center/cover;
+}
+#services{
+    padding: 0 15px;
+}
+#services h2{
+    font-size: 2em;
+    font-weight: 700;
+    font-family: "Poppins";
+    margin-bottom:  5px;
+    padding-top: 66px;
+    text-align: center;
+}
+#services p{
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center; 
+    line-height: 26px;
+}
+
+#articles{
+    padding: 44px 0;
+}
+.serv h3{
+    font-size: 23px;
+    line-height: 32px;
+    font-weight: 700;
+    font-family: "Poppins";
+    text-align: center;
+    padding-bottom: 20px;
+}
+.serv i{
+    font-size: 34px;  /*inspekde 14px olmasina regmen yeke idi*/
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+.serv{
+    padding: 22px 0;
+}
+.hh{
+    font-size: 35px;
+    font-weight: 700;
+    font-family: "Poppins";
+    text-align: center;
+    padding-top: 40px;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+.bgBluish p{
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center; 
+    line-height: 26px;
+    margin-bottom: 50px;
+}
+.bgBluish{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pp{
+    width: 80%;
+}
+.blog{
+    font-weight: 700;
+    font-size: 16px;
+    font-family: "Lato";
+    padding: 15px 35px;
+    border-radius: 3px;
+    display: inline-block;
+    text-decoration: none;
+}
+#cards{
+    padding: 54px 15px ;
+}
+.card{
+    padding: 27px 0;
+    background-color: #222f36;
+    border: none;        /*bootstrapa gore*/
+    width: 100%;
+}
+.content{
+    padding: 40px 20px;
+}
+.content p{
+    text-align: left;
+}
+.content h2{
+    font-size: 23px;
+    font-weight: 700;
+    font-family: "Poppins";
+    margin-bottom: 50px;
+}
+.content a{
+    font-weight: 590;
+    font-size: 16px;
+    font-family: "Lato";
+    text-decoration: none;
+}
+.nature{
+    height: 213px;
+}
+.n1{
+    background: url(https://149842022.v2.pressablecdn.com/illdy/wp-content/uploads/sites/58/2016/02/photo-1449168013943-3a15804bb41c-360x213.jpg)center/cover;
+}
+.n2{
+    background: url(https://149842022.v2.pressablecdn.com/illdy/wp-content/uploads/sites/58/2016/02/photo-1450101215322-bf5cd27642fc-360x213.jpg)center/cover;
+}
+.n3{
+    background: url(https://149842022.v2.pressablecdn.com/illdy/wp-content/uploads/sites/58/2016/02/photo-1447687643809-e05fd462f350-360x213.jpg)center/cover;
+}
+
+
+
+.carousel-item img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 150px;
+   
+}
+.carousel-inner{
+    text-align: center;   /*d-block u silenden sonra isledi*/
+    height: 100%;
+    min-width: 50px;
+}
+.carousel-item{
+    height: 450px;
+}
+.carousel-caption p{
+   min-width: 50px;
+    line-height: 26px;
+    font-size: 16px;
+    font-family: "Lato";
+    font-weight: 400;
+}
+.carousel-caption h5{
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 700;
+   
+}
+#carouselExampleCaptions{
+    height: 550px
+}
+.carousel-indicators button{
+    width: 15px  !important; 
+    height: 15px  !important;
+    border-radius: 50%;
+    &:active{
+        background-color: #ffde01;
+        border: 1px solid #fff;  /*niye hoppanmaga basladi?*/
+    }
+    /* &:hover{
+        background-color: #000;  active sari itir
+        border: 1px solid #fff;
+    } */
+}
+@media only screen and (max-width: 420px){
+    .carousel-item{
+        height: 600px;
+    }
+    .carousel-item{
+        height: 600px;
+    }
+    #testimonials {
+        max-height: 900vh;
+    }
+    .container{
+        max-height: 700vh;
+    }
+}
+#desktop{
+    display: none;
+}
+@media only screen and (min-width: 768px) {
+    label .fa-bars{
+        display: none;
+    }
+    #title h1 {
+        font-size: 5em;
+        line-height: 74px;
+    }
+
+    .fa-circle {
+        font-size: 10px;
+    }
+
+    #title p {
+        max-width: 60%;
+        display: inline-block;
+        text-align: center;
+    }
+
+    #variant {
+        flex-direction: row;
+        padding: 40px 40px;
+    }
+
+    .range {
+        padding: 20px 10px;
+    }
+
+    .pep {
+        width: 80%;
+    }
+
+    #pictures {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .divler {
+        width: 25%;
+    }
+    #articles{
+        display: flex;
+        flex-direction: row;
+        padding: 44px 40px;
+    }
+    #services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .serv{
+        padding: 22px 20px;
+    }
+    .descr{
+        width: 70%;
+       
+    }
+    #cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 375px;
+        padding: 27px 15px;
+    }
+
+    /* #desk{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    } */
+    nav{
+        /* max-width: 1000px; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; /*??niye islemir*/
+    }
+    
+    #desktop{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    #logo{
+        width: 155;
+    }
+    #desktop{
+        width: 566;
+    }
+    #desktop li a{
+        text-decoration: none;
+        font-size: 1em;
+        font-family: "Lato";
+        font-weight: 400;
+        color: #fff;
+        border-bottom: none;
+        padding: 0 10px;
+       
+    }
+    #desktop li:active{
+        background-color: none;  /*??niye getmir*/
+    }
+}
+
+@media only screen and (min-width: 167px) and (max-width:260px) {
+    #title h1 {
+        font-size: 1.2em;
+        line-height: 34px;
+    }
+}
+
+@media only screen and (min-width: 990px) {
+    #but {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .pep {
+        width: 60%;
+    }
+
+    #variant {
+        width: 80%;
+    }
+    
+}
