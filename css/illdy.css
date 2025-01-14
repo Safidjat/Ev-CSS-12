@@ -618,11 +618,17 @@ section {
         color: #fff;
         border-bottom: none;
         padding: 0 10px;
-       
+       &:active{
+        background-color: initial; 
+       }
+       &:hover{
+        background-color: initial;
+       }
+       &:hover{
+        color: #ffde00;
     }
-    #desktop li:active{
-        background-color: none;  /*??niye getmir*/
     }
+    
 }
 
 @media only screen and (min-width: 167px) and (max-width:260px) {
