@@ -318,8 +318,8 @@ section {
 
 .divler {
     width: 100%;
-    min-height: 200px;
-    /*responsiv kvadrat ???*/
+    aspect-ratio: 1 / 1; /* квадрат */
+    
 }
 
 .pics:hover {
@@ -555,14 +555,9 @@ section {
     }
 
     #pictures {
-        width: 100vw;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-    }
-
-    .divler {
-        width: 25%;
     }
     #articles{
         display: flex;
