@@ -92,7 +92,7 @@ nav {
 }
 
 #content {
-  height: 0;          
+  height: 0;          /*positionla eliyende asagidaki titllarin ustunden olur onlari asagi itelemir*/
   width: 0;
   overflow: hidden;
 }
