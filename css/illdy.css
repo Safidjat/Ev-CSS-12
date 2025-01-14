@@ -286,7 +286,7 @@ section {
 
 #div1 {
     background: url('../img/pic1.jpg')center/cover;
-
+    
     &:hover {
         background: url('../img/pic1photopea.png')center/cover;
     }
@@ -296,7 +296,7 @@ section {
     background: url('../img/pic2.jpg')center/cover;
 
     &:hover {
-        background: url('../img/pic2photopea.png')center/cover;
+        background: url('../img/pic2Photopea.png')center/cover;
     }
 }
 
@@ -304,7 +304,7 @@ section {
     background: url('../img/pic3.jpg')center/cover;
 
     &:hover {
-        background: url('../img/pic3photopea.png')center/cover;
+        background: url('../img/pic3Photopea.png')center/cover;
     }
 }
 
@@ -312,7 +312,7 @@ section {
     background: url('../img/pic4.jpg')center/cover;
 
     &:hover {
-        background: url('../img/pic4photopea.png')center/cover;
+        background: url('../img/pic4Photopea.png')center/cover;
     }
 }
 
