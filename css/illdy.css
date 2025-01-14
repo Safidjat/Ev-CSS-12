@@ -279,8 +279,6 @@ section {
 }
 
 #pictures {
-    width: 100%;
-    max-height: 80vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -319,8 +317,8 @@ section {
 }
 
 .divler {
-    width: 50%;
-    min-height: 250px;
+    width: 100%;
+    min-height: 200px;
     /*responsiv kvadrat ???*/
 }
 
@@ -330,7 +328,10 @@ section {
     display: block;
     height: 100%;
 }
-
+.pics{
+    display: inline-block;
+    width: 50%;
+}
 #testimonials h2 {
     font-size: 35px;
     font-weight: 700;
@@ -554,7 +555,7 @@ section {
     }
 
     #pictures {
-        width: 100%;
+        width: 100vw;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
