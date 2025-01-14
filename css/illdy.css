@@ -92,13 +92,15 @@ nav {
 }
 
 #content {
-    display: none;
+  height: 0;          
+  width: 0;
+  overflow: hidden;
 }
 
-#check:checked~#content {
-    transition: 60s;
-    max-width: 100%;
-    display: block;
+#check:checked~#content  {
+    transition: .7s;
+    width: 100%;
+    height: 100%;
 }
 
 menu li a {
